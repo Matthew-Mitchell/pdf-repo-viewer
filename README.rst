@@ -26,7 +26,7 @@ Motivation
 I needed a central location for pdf reports that are accessible by anyone.  The good thing about pdf files is
 that they are viewable in a browser, so you really don't need adobe acrobat or anything special installed on your computer.
 You can view pdfs from your phone or computer, and as long as your folder structure makes sense,
-users will easily find your reports.
+users will easily find your pdf reports.
 
 
 Roadmap

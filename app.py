@@ -1,12 +1,27 @@
 import os
+import sys
 
 from flask import Flask
+from flask import logging
 from flask import make_response
 from flask import render_template
 from flask import request
+
 import config
 
 app = Flask(__name__)
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
+
+here = os.path.abspath(os.path.dirname(__file__))
+
+if "/" in config.STARTING_DIRECTORY:
+    base_directory = ""
+else:
+    base_directory = config.STARTING_DIRECTORY
+
+if "/" not in config.STARTING_DIRECTORY:
+    config.STARTING_DIRECTORY = os.path.join(here, config.STARTING_DIRECTORY)
 
 
 def get_structure(directory):
@@ -44,14 +59,5 @@ def index():
                            directories=directories, files=display_files(files))
 
 if __name__ == "__main__":
-    here = os.path.abspath(os.path.dirname(__file__))
 
-    if "/" in config.STARTING_DIRECTORY:
-        base_directory = ""
-    else:
-        base_directory = config.STARTING_DIRECTORY
-
-    if "/" not in config.STARTING_DIRECTORY:
-        config.STARTING_DIRECTORY = os.path.join(here, config.STARTING_DIRECTORY)
-
-    app.run(debug=True)
+    app.run()

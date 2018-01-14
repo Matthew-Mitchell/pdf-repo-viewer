@@ -5,9 +5,7 @@ PDF Repository Viewer
 A Flask app that will serve pdf files from a repository.
 
 
-A demo can be viewed here:
-
-* https://pdf-repo-viewer.herokuapp.com/
+A demo can be viewed here:  https://pdf-repo-viewer.herokuapp.com/
 
 
 What it does

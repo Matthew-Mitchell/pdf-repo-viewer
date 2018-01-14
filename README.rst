@@ -5,7 +5,7 @@ PDF Repository Viewer
 A Flask app that will serve pdf files from a repository.
 
 
-A demo can be viewed here
+A demo can be viewed here:
 
 * https://pdf-repo-viewer.herokuapp.com/
 
@@ -13,7 +13,7 @@ A demo can be viewed here
 What it does
 ------------
 
-Lets a user navigate through your directory to view pdf files.
+Lets a user navigate through your directory to view pdf files.  It is really simple and is supposed to be.
 
 
 What it doesn't
@@ -27,6 +27,12 @@ Motivation
 
 I needed a central location for pdf reports that are accessible by anyone.  The good thing about pdf files is
 that they are viewable in a browser, so you really don't need adobe acrobat or anything special installed on your computer.
-You can view pdfs from your phone or computer, and as long as you structure your reports in an understandable way,
+You can view pdfs from your phone or computer, and as long as your folder structure makes sense,
 users will easily find your reports.
 
+
+Roadmap
+-------
+
+This app really needs control of who can access the pdf files.  When I say "anyone" can access your reports, I mean it.
+You don't really want that do you?

@@ -17,7 +17,7 @@ Lets a user navigate through your directory to view pdf files.  It is really sim
 What it doesn't
 ---------------
 
-Add files.  Delete files.  Prevent anyone from viewing files.
+Add files.  Delete files.  Prevent anyone from viewing files.  Search for files.  It's really basic.
 
 
 Motivation

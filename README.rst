@@ -34,3 +34,14 @@ Roadmap
 
 This app really needs control of who can access the pdf files.  When I say "anyone" can access your reports, I mean it.
 You don't really want that do you?
+
+I am thinking of something like this:
+
+POST /api/login -> login & get some type of response containing a user_profile
+
+GET /api/user/<user_profile>/files/ -> list files for a user_profile
+POST /api/user/<user_profile>/files/ -> create files for a user_profile
+
+GET /api/user/<user_profile>/files/<file_id> -> get specific file for user_profile
+PUT /api/user/<user_profile>/files/<file_id> -> update specific file for user_profile
+DELETE /api/user/<user_profile>/files/<file_id> -> delete specific file for user_profile
